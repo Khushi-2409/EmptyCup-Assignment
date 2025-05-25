@@ -1,0 +1,259 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  min-height: 100vh;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo,
+nav .heading {
+  padding: 0 10px;
+}
+
+/* Section Padding */
+section {
+  background-color: white;
+  padding: 25px 60px;
+  margin-top: -5px;
+}
+
+/* Icon Styling */
+.icon img {
+  width: 34px;
+  height: 42px;
+  margin-bottom: -0.15px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-icons,
+.right-icons {
+  display: flex;
+  gap: 70px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Profile Card */
+.profile-card,
+.profile2-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffaf5;
+  padding: 30px 40px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.profile2-card {
+  background-color: white;
+}
+
+/* Profile Details (Left Column) */
+.card-left {
+  width: 70%;
+}
+
+.card-left h2 {
+  font-size: 46px;
+}
+
+.stars {
+  color: #222;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card-left p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  text-align: center;
+  min-width: 60px;
+}
+
+.stat .value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.stat .label {
+  font-size: 14px;
+  color: #555;
+}
+
+.contacts p {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 3px 0;
+}
+
+/* Profile Actions (Right Column) */
+.card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-left: 1px solid #eee;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  color: #703e36;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.action img {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 6px;
+}
+
+.action span {
+  font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav .logo img {
+    width: 24px;
+    height: auto;
+  }
+
+  nav .heading {
+    font-size: 18px;
+  }
+
+  nav .menu img {
+    width: 20px;
+    height: auto;
+  }
+
+  section.panel {
+    padding: 15px 20px;
+  }
+
+  .icon img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .icon {
+    font-size: 11px;
+  }
+
+  .left-icons,
+  .right-icons {
+    gap: 30px;
+  }
+
+  section:not(.panel) {
+    padding: 20px;
+  }
+
+  .profile-card,
+  .profile2-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .card-left,
+  .card-right {
+    width: 100%;
+  }
+
+  .card-right {
+    flex-direction: row;
+    justify-content: space-around;
+    border-left: none;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .card-left h2 {
+    font-size: 26px;
+  }
+
+  .stars {
+    font-size: 20px;
+  }
+
+  .stat .value {
+    font-size: 20px;
+  }
+
+  .stat .label {
+    font-size: 12px;
+  }
+
+  .contacts p {
+    font-size: 13px;
+  }
+
+  .action {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .action img {
+    width: 20px;
+    height: 20px;
+  }
+}
